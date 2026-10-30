@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "benchclient",
+  "version": "1.0.0",
+  "name": "BenchClient",
+  "description": "Full-featured Minecraft cheat client",
+  "authors": ["bench"],
+  "contact": {},
+  "license": "proprietary",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.bench.client.core.Client"]
+  },
+  "mixins": ["benchclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  }
+}
